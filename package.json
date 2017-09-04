@@ -1,0 +1,29 @@
+{
+  "name": "rdfxml2jsonld",
+  "version": "0.1.0",
+  "private": false,
+  "author": "Magnus Melin <mkmelin+github@iki.fi>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url" : "H:/rdfxml2jsonld.git/",
+    "urlXXX": "https://github.com/mkmelin/rdfxml2jsonld/rdfxml2jsonld.git"
+  },
+  "keywords": [
+    "rdf-parser",
+    "rdf",
+    "linked data",
+    "json-ld"
+  ],
+  "scripts": {
+  },
+  "bugs": {
+    "url": "https://github.com/mkmelin/rdfxml2jsonld/issues"
+  },
+  "homepage": "https://github.com/mkmelin/rdfxml2jsonld",
+  "dependencies": {
+    "jsonld": "^0.4.11",
+    "rdf-parser-rdfxml": "^0.3.1"
+  },
+  "devDependencies": {}
+}
