@@ -6,8 +6,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "H:/rdfxml2jsonld.git/",
-    "urlXXX": "https://github.com/mkmelin/rdfxml2jsonld/rdfxml2jsonld.git"
+    "url": "https://github.com/mkmelin/rdfxml2jsonld.git"
   },
   "keywords": [
     "rdf-parser",
