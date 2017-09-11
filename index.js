@@ -6,6 +6,12 @@ function toJSONLD(input, rdfparserOptions, jsonldOptions, jsonldContext, callbac
   // https://github.com/digitalbazaar/jsonld.js/issues/108
   var rdfXmlParser = function(input, callback) {
     var parser = new RdfXmlParser();
+    // Namespace xmlns:mwapi="http://wikiba.se/ontology#api#" URI is invalid
+    // and makes at least Chrome disqualify the XML.
+    // Work around that, since wikidata sends that namespace by default in
+    // a lot of responses.
+    input = input.replace(/http:\/\/wikiba.se\/ontology#api#/,
+                          "http://wikiba.se/ontology#api%23");
     parser.parse(input, function(err, dataset) {
       if (err) {
         callback(err);
